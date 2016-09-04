@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/afterLoad">
+
+
+    <ImageView
+        android:layout_width="128px"
+        android:layout_height="128px"
+        android:id="@+id/userImage"
+        android:background="#000000"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/username"
+        android:layout_below="@+id/title"
+        android:layout_toEndOf="@+id/userImage"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="15px"
+        android:layout_marginRight="10px"
+        android:layout_marginBottom="5px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/description"
+        android:layout_below="@+id/userImage"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10px" />
+
+</RelativeLayout>

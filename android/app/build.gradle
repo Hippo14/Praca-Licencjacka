@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "wmp.uksw.pl.pracalicencjacka_prototyp2"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        // Enabling multidex support.
+//        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+            debuggable true
+        }
+    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':volley')
+
+    //Core
+
+
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+//    compile 'com.google.android.gms:play-services-auth:8.3.0'
+//    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    //Core
+//    compile 'com.github.gabrielemariotti.cards:cardslib-core:2.1.0'
+
+    //Optional for built-in cards
+//    compile 'com.github.gabrielemariotti.cards:cardslib-cards:2.1.0'
+    //MultiDex
+//    compile 'com.android.support:multidex:1.0.1'
+}
