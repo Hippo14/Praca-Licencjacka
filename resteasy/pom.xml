@@ -23,9 +23,9 @@
   <modelVersion>4.0.0</modelVersion>
   <packaging>war</packaging>
 
-  <name>RESTEasy_01</name>
-  <groupId>my.java</groupId>
-  <artifactId>RESTEasy_01</artifactId>
+  <name>Praca-Licencjacka-REST</name>
+  <groupId>my.praca-licencjacka</groupId>
+  <artifactId>rest</artifactId>
   <version>0.0.1</version>
 
   <properties>
